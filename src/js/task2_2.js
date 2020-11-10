@@ -8,11 +8,7 @@ const users = [
 
 
 const toggleUserState = (allUsers, userName) => {
-    //   const updatedUsers = allUsers.map(user =>
-    //     user.name === userName ? { ...user, active: !user.active } : user,
-    //   );
-
-    // callback(updatedUsers);
+    
 
 
     return new Promise(resolve => {
@@ -25,12 +21,6 @@ const toggleUserState = (allUsers, userName) => {
 };
 
 const logger = updatedUsers => console.table(updatedUsers);
-
-/*
- * Сейчас работает так
- */
-// toggleUserState(users, 'Mango', logger);
-// toggleUserState(users, 'Lux', logger);
 
 /*
  * Должно работать так
